@@ -14,14 +14,14 @@
 #
 class mysql::server::params {
 
-	### Application related parameters
+  ### Application related parameters
 
-	$package_name = $::operatingsystem ? {
-		default => 'mysql-server'
-	}
+  $package_name = $::operatingsystem ? {
+    default => 'mysql-server'
+  }
 
-	$enabled = true
+  $enabled = true
 
-	$password = undef
+  $password = undef
 
 }
